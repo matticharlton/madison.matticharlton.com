@@ -150,3 +150,21 @@ footer {
   gap: 0.4rem;
 }
 footer a { color: var(--muted); }
+
+/* Marketing page */
+.cta { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.4rem; }
+.cta a {
+  text-decoration: none; font-weight: 600; color: var(--night);
+  background: var(--cyan); padding: 0.55rem 1.1rem; border-radius: 999px;
+}
+.cta a.ghost { background: transparent; color: var(--ink); border: 1px solid rgba(255,255,255,0.5); }
+.cta a:hover { filter: brightness(1.1); }
+.shot { margin: 0; display: grid; gap: 0.4rem; }
+.shot img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); }
+.shot figcaption { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); letter-spacing: 0.04em; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; }
+.worlds { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.9rem; }
+.world { border: 1px solid var(--line); background: var(--panel); border-radius: 10px; padding: 0.9rem 1rem; display: grid; gap: 0.3rem; min-width: 0; }
+.world strong { color: var(--cyan); }
+.world span { color: var(--muted); font-size: 0.95rem; }
+.price { border: 1px solid var(--pink); border-radius: 10px; padding: 1rem 1.1rem; background: rgba(255,79,179,0.08); display: grid; gap: 0.5rem; }
